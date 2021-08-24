@@ -1,10 +1,14 @@
 //  Template literal
 
 /* Do the following:
-- Define a variable named `username` using `const` keyword and assign your name as a value.*/
-Answer. 
+- Define a variable named `username` using `const` keyword and assign your name as a value.*/ 
 - /*Define another variable named `bio` and assign a value `Learning to code`. Use `let` keyword to define the variable.
 */
+Answer. 
+
+const username=`Arya`
+let bio = `Learning to code.`
+
 
 let firstName = "Arya";
 let lastName = "Stark";
