@@ -7,9 +7,37 @@
   - `if` the number is odd print the message "number is odd"
 */
 
+// take number from user using prompt
+let num = prompt("Enter a number");
+// prompt always returns string
+// we will convert the value into number
+num = Number(num);
+// if the number divisible by 2 or not
+
+if (num % 2 === 0) {
+  alert("Number is even");
+} else {
+  alert("Number is odd!");
+}
+
 // 2. Write a program to accept two numbers from user using`prompt` and alert the max value.
 
+let a = Number(prompt("enter a number"));
+
+let b = Number(prompt("enter second number"));
+
+if (a > b) {
+  alert("A is greater");
+} else {
+  alert("B is greater");
+}
 // 3. Convert the above code using`?` terniary operator
+
+let a = Number(prompt("enter a number"));
+
+let b = Number(prompt("enter second number"));
+
+a > b ? alert("A is greater") : alert("B is greater");
 
 /*
 4. Write a program that asks the user for the house name and check the following conditions:
