@@ -46,13 +46,65 @@ a > b ? alert("A is greater") : alert("B is greater");
   - `if` house name is "lannister" then print the message " A lannister always pays his debt"
   - `else` print the message " All men must die"
 */
+let houseName = prompt("enter the house name");
+if (houseName === "stark") {
+  alert("winter is coming");
+} else if (houseName === "lannister") {
+  alert("a lannister always pays his debt");
+} else {
+  alert("all men must die");
+}
 
 // 5. Convert the above code using`?` terniary operator
-
+houseName === "stark"
+  ? alert("winter is coming")
+  : houseName === "lannister"
+  ? alert("a lannister always pays his debt")
+  : alert("all men must die");
 // Switch
 
 // 6. Write a program that takes the number of the month(1 - 12) and alert number of days in the month.
-
+let monthName = prompt("enter the month name");
+switch (monthName) {
+  case "January":
+    alert("Total number of days are 31");
+    break;
+  case "February":
+    alert("Total number of days are 29");
+    break;
+  case "Mrach":
+    alert("Total number of days are 31");
+    break;
+  case "April":
+    alert("Total number of days are 30");
+    break;
+  case "May":
+    alert("Total number of days are 31");
+    break;
+  case "June":
+    alert("Total number of days are 30");
+    break;
+  case "July":
+    alert("Total number of days are 31");
+    break;
+  case "August":
+    alert("Total number of days are 31");
+    break;
+  case "September":
+    alert("Total number of days are 30");
+    break;
+  case "October":
+    alert("Total number of days are 31");
+    break;
+  case "November":
+    alert("Total number of days are 30");
+    break;
+  case "December":
+    alert("Total number of days are 31");
+    break;
+  default:
+    alert("not a valid input");
+}
 /* 7.
 - Write a program that take the salery of the user using prompt and alert the in -hand amount.You will find out the in -hand amount by deducting the tax amoun from salery.Conditions are given below.
   - `Salary <= 20000` tax is 10 %
@@ -60,6 +112,30 @@ a > b ? alert("A is greater") : alert("B is greater");
   - `Salary > 50000` tax is 30 %
 
 */
+let salary = Number(prompt("enter your salary"));
+switch (true) {
+  case salary <= 20000:
+    let taxedAmount = (salary * 10) / 100;
+    {
+      alert("Your in-hand salary ${salary-taxedAmount}");
+      break;
+    }
+  case salary <= 40000:
+    let taxedAmount = (salary * 20) / 100;
+    {
+      alert("Your in-hand salary ${salary-taxedAmount}");
+      break;
+    }
+  case salary > 50000:
+    let taxedAmount = (salary * 30) / 100;
+    {
+      alert("Your in-hand salary ${salary-taxedAmount}");
+      break;
+    }
+  default: {
+    alert("not a  valid salary");
+  }
+}
 
 //  if..else vs switch
 
@@ -73,6 +149,36 @@ Implement the condition give below using`if..else` and`switch` statement.
   - `marks > 0` alert`"Grade D"`
 
 */
+let marks = Number(prompt("enter your marks"));
+if (marks > 100) {
+  alert("Marks can't be greater than 100");
+} else if (marks > 80 && marks < 100) {
+  alert("Grade A");
+} else if (marks > 50 && marks < 80) {
+  alert("Grade B");
+} else if (marks > 30 && marks < 50) {
+  alert("Grade c");
+} else marks > 0;
+{
+  alert("Grade D");
+}
+
+switch (true) {
+  case marks > 100:
+    alert("Marks can't be greater than 100");
+    break;
+  case marks > 80 && marks < 100:
+    alert("Grade A");
+    break;
+  case marks > 50 && marks < 80:
+    alert("Grade B");
+    break;
+  case marks > 30 && marks < 50:
+    alert("Grade C");
+    break;
+  default:
+    alert("Grade D");
+}
 
 /* 9. Weather app
 
@@ -83,3 +189,20 @@ Implement the condition give below using`if..else` and`switch` statement.
   - If`freezing` alert`Get your sweeter on`
   - Anything else should alert`Not a valid input`
 */
+let weather = prompt("What is the weather like outside ?");
+switch (weather) {
+  case "sunny":
+    alert("Wear a T-shirt");
+    break;
+  case "rainy":
+    alert("Don't forget to take your raincoat");
+    break;
+  case "hot":
+    alert("Get a hanky");
+    break;
+  case "freezing":
+    alert("Get your sweater on");
+    break;
+  default:
+    alert("Not a valid input");
+}
