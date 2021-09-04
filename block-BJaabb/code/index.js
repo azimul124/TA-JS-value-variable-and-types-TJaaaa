@@ -9,7 +9,7 @@
 /* 2.
 Use `prompt` to take two numbers from user and store it in variable `numA` and `numB`. Create a third variable called `sum`, using `+` operator add numA and numB , store it in varible `sum` and using alert display `sum` in browser.
 */
-
+k;
 // Loops
 
 // 3. Complete the following code to make the output be 0 2 4 6 8 10?
